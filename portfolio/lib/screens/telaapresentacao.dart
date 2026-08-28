@@ -58,6 +58,14 @@ class TelaApresentacao extends StatelessWidget {
                 ),
               ),
 
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/favoritar');
+                },
+                icon: const Icon(Icons.folder_open),
+                label: const Text('Ver meus projetos'),
+              ),
+
               Column(
                 spacing: 12,
                 children: [
